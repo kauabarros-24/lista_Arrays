@@ -1,0 +1,67 @@
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+    
+    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    //Apresente a lista final de cada tipo de veículo.
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+
+    //PROCESSAMENTO
+    let v1 = prompt('Deseja inserir qual veículo: ').trim();
+    let tipo = prompt('O veículo anterior é sedan, hatch ou SUV').toUpperCase().trim();
+    let v2 = prompt('Diga qual veículo deseja inserir').trim();
+    let tipo2 = prompt('O veículo anterioir é sedan, hatch ou SUV').toUpperCase().trim();
+    let v3 = prompt('Outro veículo');
+    let tipo3 = prompt('O veículo anterioir é sedan, hatch ou SUV').toUpperCase().trim();
+    
+
+    //SAÍDA
+    if (tipo == 'SEDAN') {
+        cassosSedan.push(v1);
+    alert(cassosSedan.join(", "));
+    }
+    if (tipo == 'HATCH') {
+        carrosHatch.push(v1);
+        alert(carrosHatch.join(", "));
+    }
+    if (tipo == 'SUV') {
+        carrosSUV.push(v1);
+        alert(carrosSUV.join(", "));
+    }
+    if (tipo2 == 'SEDAN') {
+        cassosSedan.push(v2);
+    alert(cassosSedan.join(", "));
+    }
+    if (tipo2 == 'HATCH') {
+        carrosHatch.push(v2);
+        alert(carrosHatch.join(", "));
+    }
+    if (tipo2 == 'SUV') {
+        carrosSUV.push(v2);
+        alert(carrosSUV.join(", "));
+    }if (tipo3 == 'SEDAN') {
+        cassosSedan.push(v3);
+    alert(cassosSedan.join(", "));
+    }
+    if (tipo3 == 'HATCH') {
+        carrosHatch.push(v3);
+        alert(carrosHatch.join(", "));
+    }
+    if (tipo3 == 'SUV') {
+        carrosSUV.push(v3);
+        alert(carrosSUV.join(", "));
+    }
+
+
+
+
+</script>

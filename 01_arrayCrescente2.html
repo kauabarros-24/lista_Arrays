@@ -1,0 +1,27 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Problema: Array em ordem crescente
+    //Peça para um usuário inserir dois números. Crie um array com os números, colocando-os em ordem crescente. Para ordenar, NÃO use o método sort();
+    //Retorne os elementos do array, separando-os por hífen (n1 - n2).
+
+    //ENTRADAc
+
+    lista_compras = [];
+    let n1 = Number((prompt('Digite o primeiro núemero: ')).replace(',', '.').trim());
+    let n2  = Number((prompt('Digite outro valor: ')).replace(',', '.').trim());
+
+    if (n1 > n2) {
+        lista_compras.push(n2, n1);
+        alert((`${lista_compras.join('-')}`).replace('.', ','));
+    }
+    else {
+        lista_compras.push(n1, n2);
+        alert((`${lista_compras.join('-')}`).replace('.', ','));
+    }
+   
+    
+
+    //SAÍDA
+   
+    
+</script>
